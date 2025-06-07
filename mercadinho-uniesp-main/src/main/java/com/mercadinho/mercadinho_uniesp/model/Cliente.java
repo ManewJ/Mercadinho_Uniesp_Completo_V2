@@ -1,5 +1,6 @@
 package com.mercadinho.mercadinho_uniesp.model;
 
+import com.mercadinho.mercadinho_uniesp.validator.ValidCPF;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,4 +22,6 @@ public class Cliente {
     private String nome;
     private String telefone;
     private String email;
+    @ValidCPF
+    private String cpf;
 }
