@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor; // Adicione esta linha
-import com.fasterxml.jackson.annotation.JsonManagedReference; // Se você estiver usando
+import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -14,8 +14,8 @@ import java.util.List;
 @Entity
 @Data
 @Builder
-@NoArgsConstructor // Mantenha esta
-@AllArgsConstructor // Adicione esta anotação
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "tb_venda")
 public class Venda {
 
@@ -27,6 +27,6 @@ public class Venda {
     private BigDecimal valorTotal;
 
     @OneToMany(mappedBy = "venda", cascade = CascadeType.ALL)
-    @JsonManagedReference // Mantenha isso se você adicionou antes
+    @JsonManagedReference
     private List<ItemVenda> itens;
 }

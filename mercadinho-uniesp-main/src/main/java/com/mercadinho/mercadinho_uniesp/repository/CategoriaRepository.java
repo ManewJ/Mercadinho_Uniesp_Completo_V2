@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository; //importa a anotacao repositor
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 
-    boolean existsByNome(String nome); //consulta personalizada pra ver se existe uma categoria com o nome fornecido
+    boolean existsByNome(String nome);
+    //consulta personalizada pra ver se existe uma categoria com o nome fornecido
 
 }

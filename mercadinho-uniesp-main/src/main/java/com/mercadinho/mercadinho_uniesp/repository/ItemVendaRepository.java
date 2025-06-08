@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ItemVendaRepository extends JpaRepository<ItemVenda, Long> {
-    // Métodos de consulta personalizados para ItemVenda, se necessário.
+
 }
