@@ -1,7 +1,7 @@
 package com.mercadinho.mercadinho_uniesp.model;
 
 import java.util.List;
-import feign.FeignException;
+
 
 public class PokemonDTO {
     private String name;
